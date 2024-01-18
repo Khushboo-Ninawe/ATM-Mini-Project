@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="atm-container">
+        <h1>ATM Machine</h1>
+        <div id="output"></div>
+        <label for="pin">Enter PIN: </label>
+        <input type="password" id="pin">
+        <br>
+        <button onclick="balanceQuery()">Balance & Query</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="changePin()">Change PIN</button>
+        <button onclick="miniStatement()">Mini Statement</button>
+        <button onclick="selectAccount('savings')">Savings Account</button>
+        <button onclick="selectAccount('current')">Current Account</button>
+        <button onclick="printReceipt()">Print Receipt</button>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
